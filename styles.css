@@ -1,0 +1,19 @@
+:root { color-scheme: light; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #202522; background: #fff; }
+* { box-sizing: border-box; }
+body { margin: 0; line-height: 1.65; font-size: 16px; letter-spacing: 0; }
+header, footer { max-width: 880px; margin: auto; padding: 20px 28px; display: flex; gap: 16px; justify-content: space-between; flex-wrap: wrap; }
+header { border-bottom: 1px solid #d8dedb; align-items: center; }
+.brand { font-weight: 700; color: #202522; text-decoration: none; font-size: 19px; }
+a { color: #176b4a; text-underline-offset: 3px; overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid #b8621c; outline-offset: 4px; }
+main { max-width: 800px; margin: auto; padding: 38px 28px 44px; }
+h1 { font-size: 32px; line-height: 1.2; margin: 8px 0 18px; }
+h2 { font-size: 20px; line-height: 1.35; margin: 0 0 10px; }
+p { margin: 0 0 15px; }
+.intro { font-size: 19px; max-width: 650px; }
+.label { color: #176b4a; font-weight: 600; margin: 0; font-size: 14px; }
+.updated { color: #56615b; font-size: 14px; }
+section { margin-top: 32px; }
+code { font-size: 14px; overflow-wrap: anywhere; }
+footer { border-top: 1px solid #d8dedb; color: #56615b; font-size: 14px; }
+@media (max-width: 480px) { header, footer { padding: 18px 20px; } main { padding: 28px 20px 36px; } h1 { font-size: 29px; } }

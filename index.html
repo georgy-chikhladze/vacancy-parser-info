@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vacancy Parser is a personal job-monitoring tool. Information about its read-only Gmail integration and privacy practices.">
+  <title>Vacancy Parser</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><a class="brand" href="./">Vacancy Parser</a><nav aria-label="Main"><a href="privacy.html">Privacy policy</a></nav></header>
+  <main>
+    <p class="label">Personal application</p>
+    <h1>Vacancy Parser</h1>
+    <p class="intro">A personal tool for collecting and reviewing job opportunities for its account owner.</p>
+    <section>
+      <h2>What the application does</h2>
+      <p>Vacancy Parser collects job listings from career websites, job boards, configured Telegram channels, and LinkedIn Job Alert emails. It normalizes listings, identifies possible duplicates, evaluates job relevance and location requirements, and prepares notifications and exports for the owner.</p>
+      <p>This is not a public job board, recruitment agency, or service accepting registrations. There is no sign-in form on this website.</p>
+    </section>
+    <section>
+      <h2>Why Gmail access is requested</h2>
+      <p>The application requests <code>gmail.readonly</code> to retrieve LinkedIn Job Alerts from the owner's authorized mailbox. The importer searches for messages from <code>jobalerts-noreply@linkedin.com</code> within its configured lookback period.</p>
+      <p>The Google permission technically allows read-only mailbox access; it is not restricted to one sender by Google. The application's own code limits the import to the alert messages described here. It does not send, modify, delete, or mark Gmail messages as read.</p>
+    </section>
+    <section>
+      <h2>Where information is used</h2>
+      <p>Downloaded alert messages are stored on the owner's server. Extracted vacancy information can be included in owner-configured Google Drive exports, Telegram notifications, and AI-assisted job reviews requested by the owner.</p>
+      <p>This public website contains information about the application only. It does not publish the mailbox, downloaded emails, vacancy database, server configuration, or OAuth credentials.</p>
+    </section>
+    <section>
+      <h2>Privacy and contact</h2>
+      <p>Read the <a href="privacy.html">Privacy policy</a> for data access, storage, sharing, retention, and revocation details.</p>
+      <p>The owner can be contacted using the support email displayed on the application's Google consent screen. Do not post private messages or credentials in public GitHub issues.</p>
+    </section>
+  </main>
+  <footer><a href="privacy.html">Privacy policy</a><span>Vacancy Parser</span></footer>
+</body>
+</html>

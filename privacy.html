@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the personal Vacancy Parser application and its read-only Gmail integration.">
+  <title>Privacy policy | Vacancy Parser</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><a class="brand" href="./">Vacancy Parser</a><nav aria-label="Main"><a href="./">About the application</a></nav></header>
+  <main>
+    <p class="label">Privacy</p>
+    <h1>Privacy policy</h1>
+    <p class="updated">Last updated: 11 November 2026</p>
+    <section>
+      <h2>1. Operator and purpose</h2>
+      <p>Vacancy Parser is operated by its account owner for personal vacancy monitoring and job-search review. It is not offered as a public recruitment or mailbox-processing service.</p>
+    </section>
+    <section>
+      <h2>2. Google data and permissions</h2>
+      <p>The application requests the Google Gmail permission <code>https://www.googleapis.com/auth/gmail.readonly</code>. This permission technically permits reading the authorized mailbox, but the importer is configured to request LinkedIn Job Alert messages from <code>jobalerts-noreply@linkedin.com</code>, using a recent-message lookback window.</p>
+      <p>The importer can retrieve the original alert message, including headers, sender and recipient information, subject, date, and message body. It extracts vacancy titles, employers, locations, work-mode labels, links, and relevant vacancy summaries. It also obtains OAuth access and refresh tokens to maintain the authorized connection.</p>
+      <p>The application does not send mail, modify labels, mark messages as read, or delete messages from Gmail. This website does not request a Gmail password or offer a sign-in form; authorization takes place through Google's own consent flow.</p>
+    </section>
+    <section>
+      <h2>3. Use of information</h2>
+      <p>Imported data is used to identify, deduplicate, evaluate, and review job opportunities for the owner. It is not sold or used for advertising, credit decisions, or unrelated surveillance. The application does not operate a general-purpose model-training pipeline.</p>
+      <p>The owner's use of Google API data is subject to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+    </section>
+    <section>
+      <h2>4. Storage and retention</h2>
+      <p>Copies of imported alert messages, extracted vacancy records, processing state, and OAuth credentials are stored on the owner's server. Credential files are access-restricted. No claim is made that server storage is end-to-end encrypted.</p>
+      <p>The message lookback window limits which emails are requested; it is not a deletion schedule. Downloaded alert-message files do not currently have an automatic deletion schedule and remain until removed by the owner. Vacancy records and exports follow the owner's configured retention and cleanup settings. Copies in backups may remain until those backups are rotated or removed.</p>
+    </section>
+    <section>
+      <h2>5. Transfers and external services</h2>
+      <p>Google processes authentication and Gmail API requests. Extracted vacancy information may be transferred to Google Drive for owner-configured exports, to Telegram for notifications, and to an AI service for an owner-requested job review. These transfers serve the personal job-monitoring and review functions described above.</p>
+      <p>Raw email files and OAuth credentials are not intentionally included in these vacancy exports or notifications. Vacancy summaries can contain text extracted from alert messages. External services handle the information they receive under their own terms and privacy policies; their access controls and retention settings must be managed by the owner.</p>
+      <p>This public informational website does not publish imported emails, vacancy records, credentials, or server configuration. It does not provide a public interface to the parser.</p>
+    </section>
+    <section>
+      <h2>6. Access revocation and deletion</h2>
+      <p>The owner can stop Gmail access by removing the application's authorization in <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revocation prevents future authorized access but does not automatically remove copies already downloaded.</p>
+      <p>To delete retained data, the owner must remove the downloaded message files, applicable vacancy records and exports, and any retained copies in backups or connected services. Disabling the importer alone does not delete these copies.</p>
+    </section>
+    <section>
+      <h2>7. Website hosting</h2>
+      <p>This informational website is intended to be hosted on GitHub Pages. No application analytics, advertising scripts, or tracking cookies are added to these pages. GitHub may process visitor information, including IP addresses, for hosting and security purposes under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+    </section>
+    <section>
+      <h2>8. Contact and changes</h2>
+      <p>Contact the application owner through the support email displayed on the Google consent screen. Do not submit private emails, passwords, tokens, or other sensitive information in public GitHub issues.</p>
+      <p>This policy will be updated when the application's data practices change. Any new permission or materially different use of Google data requires appropriate notice and authorization.</p>
+    </section>
+  </main>
+  <footer><a href="./">About Vacancy Parser</a><span>Privacy policy</span></footer>
+</body>
+</html>
